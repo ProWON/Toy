@@ -1,0 +1,80 @@
+body {
+    line-height: 1.5em;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.gnb {
+
+}
+.gnb a {
+    position: relative;
+    padding-bottom: 5px;
+}
+.gnb #a1:before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 4px;
+    width: 4px;
+    bottom: 0;
+    transition: 0.7s;
+    left: 0%;
+}
+.gnb #a1:hover:before {
+    left: calc(100% - 4px);
+}
+
+.gnb #a2:before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    transition: 0.7s;
+}
+.gnb #a2:hover:before {
+    width: 100%;
+}
+
+.gnb #a3:before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    transition: 0.7s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gnb #a3:hover:before {
+    width: 100%;
+}
+
+.gnb #a4:before {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    transition: 0.5s;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.gnb #a4:hover:before {
+    width: 0;
+}
