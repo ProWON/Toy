@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+header { width: 100%; height: 150px; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+header .header_top {height: 50px; display: flex; justify-content: center; align-items: center; border-bottom: soild 1px #222;}
+header .header_top .logo a{font-size: 41px; font-weight: bold; color: rgba(0, 0, 0, .4);}
+
+header .header_middle {height: 50px; width: 100%; border-bottom: solid 1px rgba(0, 0, 0, .1); display: flex; justify-content: center; align-items: center;}
+header .header_middle .nav { width: 50%; display: flex; justify-content: space-between; align-items: center;}
+header .header_middle .nav li { cursor: pointer; color: #34313; font-size: 18px; font-weight: bold;}
+header .header_middle .nav li:hover a { color: #2668bf; }
+header .header_middle .nav li a { position: relative;}
+header .header_middle .nav li a:before{ position: absolute; left: 0; bottom: 0; content: ''; border: soild 1px #2668bf; background-color: #2668bf; width: 0px; height: 2px; transition: 0.3s;}
+header .header_middle .nav li:hover a:before{ width: 100%;}
+
+header .header_bottom { height: 49px; width: 100%;}
+main {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    border: solid 1px orange;
+}

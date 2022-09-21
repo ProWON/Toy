@@ -17,6 +17,7 @@ ul {
 
 #header {
     width: 100%;
+    border-bottom: #222;
 }
 #header .header_top {
     width: 1000px;

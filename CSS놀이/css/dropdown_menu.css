@@ -1,0 +1,17 @@
+body {
+    line-height: 1.5em;
+    background-color: block;
+}
+
+a{
+    text-decoration: none;
+    color: #222;
+}
+
+.dropdown {}
+.dropdown:hover .dropdown-submenu { display: block}
+.dropdown-btn{}
+.dropdown-submenu { display: none;}
+.dropdown-submenu a {
+    display: block;
+}
